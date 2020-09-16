@@ -1659,8 +1659,7 @@ object YamlReadingTest : Spek({
                 }
             }
 
-
-            describe("given a property is used to store the type information") {
+            describe("given a custom property name is used to store the type information") {
                 val polymorphicYaml = Yaml(serializersModule = polymorphicModule, configuration = YamlConfiguration(polymorphismStyle = PolymorphismStyle.Property, polymorphismPropertyName = "kind"))
 
                 context("given some input where the value should be a sealed class") {
